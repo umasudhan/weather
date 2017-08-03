@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
-var weather = require('../lib/weather');
-var validator = require('../lib/validator');
+const express = require('express');
+const router = express.Router();
+const weather = require('../lib/weather');
+const validator = require('../lib/validator');
 
 router.get('/weather', validator.validateKey, validator.validateRate, weather.getWeatherInfo );
 
