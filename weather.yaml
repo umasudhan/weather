@@ -1,0 +1,31 @@
+swagger: '2.0'
+info:
+  title: weather API
+  description: weather API
+  version: '2.0'
+host: 'localhost:3000'
+schemes:
+  - http
+produces:
+  - application/json
+paths:
+  /weather:
+    get:
+      summary: returns weather information for the specified city and country
+      parameters:
+        - name: key
+          in: query
+          description: client API key
+          type: string
+          required: true
+        - name: city
+          in: query
+          description: city name
+          type: string
+        - name: country
+          in: query
+          description: two letter ISO-3166 country code
+          type: string
+      responses:
+        '200':
+          description: Description of weather at specified city

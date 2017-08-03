@@ -26,6 +26,7 @@ describe('Weather information retrieval', function () {
       var send = sinon.spy(res, "send");
       process.env.API_KEY = 'API_KEY';
       weather.getWeatherInfo(req, res);
+      //actually a test of the getOpenWeatherUrl function
       expect(needle.get.getCall(0).args[0]).to.equal('http://api.openweathermap.org/data/2.5/weather?appid=API_KEY&q=city,country');
   });
 });
