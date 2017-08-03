@@ -22,9 +22,10 @@
     "url": "https://github.com/umasudhan/weather/issues"
   },
   "homepage": "https://github.com/umasudhan/weather#readme",
-
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "needle": "^1.6.0"
   },
   "devDependencies": {
     "chai": "^4.1.0",
