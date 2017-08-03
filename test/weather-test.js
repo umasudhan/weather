@@ -18,14 +18,14 @@ describe('Weather information retrieval', function () {
       });
       var req = {
         query:{
-            city:''
+            city:'city',
+            country:'country'
         },
-          country:''
       };
-      var res = {send(){}};
+      var res = {send: function(){}};
       var send = sinon.spy(res, "send");
-      // sinon.spy(weather, "_getOpenWeatherUrl");
+      process.env.API_KEY = 'API_KEY';
       weather.getWeatherInfo(req, res);
-      // expect(send.getCall(0).args[0]).to.equal('Output:');
+      expect(needle.get.getCall(0).args[0]).to.equal('http://api.openweathermap.org/data/2.5/weather?appid=API_KEY&q=city,country');
   });
 });
