@@ -1,9 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const weather = require('../lib/weather');
+const validator = require('../lib/validator');
 
-/* GET home page. */
-router.get('/weather', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/weather', validator.validateKey, validator.validateRate, weather.getWeatherInfo );
 
 module.exports = router;
