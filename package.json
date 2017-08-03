@@ -25,6 +25,7 @@
   "dependencies": {
     "express": "^4.15.3",
     "jade": "^1.11.0",
+    "lodash": "^4.17.4",
     "needle": "^1.6.0"
   },
   "devDependencies": {
