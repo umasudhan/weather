@@ -26,7 +26,8 @@
     "express": "^4.15.3",
     "jade": "^1.11.0",
     "lodash": "^4.17.4",
-    "needle": "^1.6.0"
+    "needle": "^1.6.0",
+    "rolling-rate-limiter": "^0.1.10"
   },
   "devDependencies": {
     "chai": "^4.1.0",
