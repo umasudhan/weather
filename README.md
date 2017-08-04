@@ -7,7 +7,7 @@ API to retrieve weather information
 3. npm start
 
 # To hit endpoint
-http://localhost:3000/weather?country=`<country`>&&city=`<city`>&&key=<key>
+http://localhost:3000/weather?country=`<country>`&&city=`<city>`&&key=<key>
 Example:
 http://localhost:3000/weather?city=melbourne&country=au&key=key4
 
