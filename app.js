@@ -9,6 +9,11 @@ if(!process.env.API_KEY){
   console.log('Set the Openweather API key as an environment variable named API_KEY');
   process.exit(-1);
 }
+if(!process.env.CLIENT_KEYS){
+    console.log('Set the client keys as comma separated value of an environment variable named CLIENT_KEYS');
+    process.exit(-1);
+}
+
 
 app.set('view engine', 'jade');
 
