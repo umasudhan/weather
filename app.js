@@ -10,8 +10,6 @@ if(!process.env.API_KEY){
   process.exit(-1);
 }
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use('/', index);
