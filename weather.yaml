@@ -22,10 +22,12 @@ paths:
           in: query
           description: city name
           type: string
+          required: true
         - name: country
           in: query
           description: two letter ISO-3166 country code
           type: string
+          required: true
       responses:
         '200':
           description: Description of weather at specified city
